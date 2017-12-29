@@ -38,6 +38,8 @@ public class MatricesMenu extends JMenu {
 	private JMenuItem editJ;
 	
 	public MatricesMenu(){
+		super("Matrices");
+		
 		newA = new JMenuItem(EMPTY_TEXT, new ImageIcon("res/A.png"));
 		newB = new JMenuItem(EMPTY_TEXT, new ImageIcon("res/B.png"));
 		newC = new JMenuItem(EMPTY_TEXT, new ImageIcon("res/C.png"));
@@ -84,6 +86,9 @@ public class MatricesMenu extends JMenu {
 		editI.addActionListener(listener);
 		editJ.addActionListener(listener);
 		
+		newMenu = new JMenu("New");
+		editMenu = new JMenu("Edit");
+		
 		newMenu.add(newA);
 		newMenu.add(newB);
 		newMenu.add(newC);
@@ -105,6 +110,9 @@ public class MatricesMenu extends JMenu {
 		editMenu.add(editH);
 		editMenu.add(editI);
 		editMenu.add(editJ);
+		
+		add(newMenu);
+		add(editMenu);
 	}
 	
 	private class MatricesMenuListener implements ActionListener {
