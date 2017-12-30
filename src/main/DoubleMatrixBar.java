@@ -17,9 +17,9 @@ public class DoubleMatrixBar extends EntryBar {
         
         calculate.addActionListener(listener);
         
-        add(matrixSelector, BorderLayout.WEST);
-        add(secondMatrixSelector, BorderLayout.WEST);
-        add(calculate, BorderLayout.EAST);
+        add(matrixSelector,         BorderLayout.WEST);
+        add(secondMatrixSelector,   BorderLayout.WEST);
+        add(calculate,              BorderLayout.EAST);
     }
     
     private class DoubleMatrixBarListener implements ActionListener {

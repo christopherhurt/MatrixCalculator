@@ -18,9 +18,9 @@ public class ScalarMatrixBar extends EntryBar {
         
         calculate.addActionListener(listener);
         
-        add(scalarEntryField, BorderLayout.WEST);
-        add(matrixSelector, BorderLayout.WEST);
-        add(calculate, BorderLayout.EAST);
+        add(scalarEntryField,   BorderLayout.WEST);
+        add(matrixSelector,     BorderLayout.WEST);
+        add(calculate,          BorderLayout.EAST);
     }
     
     private class ScalarMatrixBarListener implements ActionListener {

@@ -13,7 +13,7 @@ public class SingleMatrixBar extends EntryBar {
         calculate.addActionListener(listener);
         
         add(matrixSelector, BorderLayout.WEST);
-        add(calculate, BorderLayout.EAST);
+        add(calculate,      BorderLayout.EAST);
     }
     
     private class SingleMatrixBarListener implements ActionListener {
