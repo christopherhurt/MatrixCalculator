@@ -27,7 +27,15 @@ public class HelpMenu extends JMenu {
 		
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO
+			Object src = e.getSource();
+		    
+		    if(src.equals(about)) {
+		        if(!AboutWindow.isOpen()){
+		            new AboutWindow();
+		        }
+		    }
+		    
+		    // TODO
 		}
 		
 	}
