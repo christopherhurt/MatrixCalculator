@@ -9,7 +9,7 @@ public class Matrix {
         matrix = newMatrix;
     }
     
-    public int getLength()
+    public int getHeight()
     {
         return matrix.length;
     }
